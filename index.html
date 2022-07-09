@@ -12,35 +12,41 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/81c8576665.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/81c8576665.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body id="cadr">
     <div class="container">
       <h1>Weather App</h1>
-    <div class="weather-app">
-      <form>
-        <div class="row">
-          <div class="col-6">
-            <div class="searchbox">
-              <div class="row g-0">
-                <div class="col-6">
-                  <input
-                    type="search"
-                    class="form-control"
-                    placeholder="Search city"
-                    id="city-input"
-                  />
-                </div>
-                <div class="col-3">
-                  <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+
+      <div class="col-6">
+        <div class="input-group mb-2">
+          <form id="search-input">
+            <input
+              id="city-input"
+              type="text"
+              class="form-control"
+              placeholder="Search for a City"
+              aria-label="Search"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-light"
+              type="submit"
+              id="button-addon2"
+              style="background-color: #3b7ab2"
+            >
+              Let's go!
+            </button>
+          </form>
         </div>
-      </form>
+      </div>
+
+      <br />
+      <h1 id="city">Glasgow</h1>
+      <div id="picture"><i class="fa-thin fa-sun"></i></div>
     </div>
     <script src="src/app.js"></script>
   </body>
