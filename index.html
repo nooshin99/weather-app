@@ -17,11 +17,11 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body id="cadr">
+  <body>
     <div class="container">
       <h1>Weather App</h1>
-
-      <div class="col-6">
+<div class="col-11">
+      <div class="col-4" id="firstColumn">
         <div class="input-group mb-2">
           <form id="search-input">
             <input
@@ -32,6 +32,7 @@
               aria-label="Search"
               aria-describedby="button-addon2"
             />
+
             <button
               class="btn btn-outline-light"
               type="submit"
@@ -41,13 +42,29 @@
               Let's go!
             </button>
           </form>
+          
         </div>
-      </div>
 
-      <br />
-      <h1 id="city">Glasgow</h1>
-      <div id="picture"><i class="fa-thin fa-sun"></i></div>
+        <br />
+        <h5 class="date">current day is ...</h5>
+        <h1 id="city">New York</h1>
+        <br />
+        <h1 class="temp">
+          35
+          <span id="centigrad">°C</span>
+          |
+          <span id="farehnheit">°F</span>
+        </h1>
+      </div>
+      <div class="row">
+          <div class="col-2">Column</div>
+          <div class="col-2">Column</div>
+          <div class="col-2">Column</div>
+        </div>
+        
+      </div>
     </div>
+</div>
     <script src="src/app.js"></script>
   </body>
 </html>
