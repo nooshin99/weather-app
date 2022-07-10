@@ -18,11 +18,13 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather App</h1>
-<div class="col-11">
-      <div class="col-4" id="firstColumn">
-        <div class="input-group mb-2">
+    <h1>Weather App <span class="highlights">Today's Hightlights</span></h1>
+     
+   
+     <div class="container">
+      <div class="row">
+        <div class="col-3" id="firstColumn">
+         <div class="input-group mb-2">
           <form id="search-input">
             <input
               id="city-input"
@@ -42,9 +44,8 @@
               Let's go!
             </button>
           </form>
-          
-        </div>
-
+         </div>
+       
         <br />
         <h5 class="date">current day is ...</h5>
         <h1 id="city">New York</h1>
@@ -55,15 +56,20 @@
           |
           <span id="farehnheit">°F</span>
         </h1>
-      </div>
-      <div class="row">
-          <div class="col-2">Column</div>
-          <div class="col-2">Column</div>
-          <div class="col-2">Column</div>
+        <div class="row">
+             <div class="col-4"  class="visibility"></div>
+          <div class="col-3"  class="visibility">visibility</div>
+          <div class="col-3" class="visibility">visibility</div>
         </div>
+      </div>
+    
+        <div class="col-1"></div>
+        <div class="col-3 wind" >Wind Status</div>
+        <div class="col-3 humidity" >Humidity</div>
         
       </div>
     </div>
+     
 </div>
     <script src="src/app.js"></script>
   </body>
